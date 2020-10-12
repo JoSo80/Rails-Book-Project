@@ -2,7 +2,7 @@
 
 <ul>
   <% @books.each do |book|%>
-     <li><%= book.title%> was published by <%= book.publisher.name%></li>
+     <li><%= link_to book.title, book %> was published by <%= book.publisher.name%></li>
   <% end %>
 </ul>
 

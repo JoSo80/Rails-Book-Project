@@ -1,7 +1,9 @@
 class BooksController < ApplicationController
   def index
-    @books = Book.order("average_rating DESC")
+    @books = Book.includes(:publisher).order("average_rating DESC")
   end
 
-  def show; end
+  def show
+    @book = Book.find(params[:id])
+  end
 end
