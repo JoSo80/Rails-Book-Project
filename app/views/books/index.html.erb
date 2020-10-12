@@ -1,8 +1,8 @@
-<h2>Top 100 Books</h2>
+<h2 class="title is-2">Top 100 Books</h2>
 
-<ul>
+<ol class="ml-5">
   <% @books.each do |book|%>
      <li><%= link_to book.title, book %> was published by <%= book.publisher.name%></li>
   <% end %>
-</ul>
+</ol>
 
