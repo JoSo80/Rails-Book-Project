@@ -1,3 +1,5 @@
+<% content_for(:html_title) {@book.title}%>
+
 <h2 class="title is-2"><%= @book.title %></h2>
 
 <p>
@@ -17,5 +19,10 @@
 
 <p>
   <strong>Average Rating: </strong>
-  <%= @book.average_rating %>
+  <%= @book.average_rating %> / 5
+</p>
+
+<p>
+  <strong>Publisher: </strong>
+  <%= link_to @book.publisher.name, @book.publisher%>
 </p>
