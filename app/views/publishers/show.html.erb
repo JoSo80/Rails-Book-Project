@@ -1,2 +1,15 @@
 <h2 class="title is-2"><%= @publisher.name%></h2>
 
+<p class="mb-5">
+   This company published <%= @publisher.books.count%> of the top 100 books.
+</p>
+
+<h3 class="title is-3">Books published by <%= @publisher.name %></h3>
+
+<div class="content">
+   <ul>
+    <% @publisher.books.each do |book| %>
+      <li><%= link_to book.title, book %></li>
+    <% end %>
+   </ul>
+</div>
