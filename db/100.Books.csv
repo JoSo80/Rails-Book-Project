@@ -1,4 +1,4 @@
-bookID,title,authors,average_rating,isbn,isbn13,language_code,  num_pages,ratings_count,text_reviews_count,publication_year,publisher
+bookID,title,authors,average_rating,isbn,isbn13,language_code,num_pages,ratings_count,text_reviews_count,publication_year,publisher
 41865,Twilight ,Stephenie Meyer,3.59,316015849,9.78E+12,eng,501,4597666,94265,2006,Little  Brown and Company
 5907,The Hobbit  or There and Back Again,J.R.R. Tolkien,4.27,618260307,9.78E+12,eng,366,2530894,32871,2002,Houghton Mifflin
 5107,The Catcher in the Rye,J.D. Salinger,3.8,316769177,9.78E+12,eng,277,2457092,43499,2001,Back Bay Books
