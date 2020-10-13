@@ -3,7 +3,7 @@ require "csv"
 Book.delete_all
 Publisher.delete_all
 
-filename = Rails.root.join("db/100.Books.csv")
+filename = Rails.root.join("db/books.csv")
 
 puts "Loading Books from the CSV file: #{filename}"
 
