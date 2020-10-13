@@ -13,5 +13,13 @@
 
   <div class="column">
     <h2 class="title is-2">Top 10 Publishers</h2>
+  <ol class="ml-5">
+    <% @publishers.each do |publisher|%>
+      <li>
+        <%= link_to publisher.name, publisher %>
+        <em>(<%= pluralize publisher.book_count, "Top Book" %>)</em>
+      </li>
+    <% end %>
+  </ol>
   </div>
 </div>
