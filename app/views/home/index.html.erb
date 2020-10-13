@@ -1,5 +1,9 @@
 <div class="columns">
-  <div class="column">
+  <div class="column is-two-thirds">
+    <p class="ml-1">
+      <strong><%= link_to 'Click here to see all top rated books', books_path%></strong>
+    </p>
+
     <h2 class="title is-2">Top 100 Books</h2>
     <ol class="ml-5">
       <% @books.each do |book|%>
@@ -12,6 +16,9 @@
   </div>
 
   <div class="column">
+    <p class="ml-1">
+      <strong><%= link_to 'Click here to see all top rated publishers', publishers_path%></strong>
+    </p>
     <h2 class="title is-2">Top 100 Publishers</h2>
   <ol class="ml-5">
     <% @publishers.each do |publisher|%>
