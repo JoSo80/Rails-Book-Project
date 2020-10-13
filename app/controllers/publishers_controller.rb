@@ -1,6 +1,10 @@
 class PublishersController < ApplicationController
   def index
-    @publishers = Publisher.all
+    @publishers = Publisher.select("publishers.*")
+                           .select("COUNT(publishers.id) as book_count")
+                           .left_joins(:books)
+                           .group("publishers.id")
+                           .order("book_count DESC")
   end
 
   def show
