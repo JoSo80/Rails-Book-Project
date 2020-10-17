@@ -2,10 +2,6 @@
 
 
   <ol class="ml-5">
-    <% @publishers.each do |publisher|%>
-      <li><%= link_to publisher.name, publisher %>
-      <em>(<%= pluralize publisher.book_count, "Top Book" %>)</em>
-      </li>
-    <% end %>
+    <%= render @publishers %>
   </ol>
 
