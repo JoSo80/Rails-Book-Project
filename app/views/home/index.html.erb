@@ -6,12 +6,7 @@
 
     <h2 class="title is-2">Top 100 Books</h2>
     <ol class="ml-5">
-      <% @books.each do |book|%>
-        <li>
-          <%= link_to book.title, book %>
-          <em>(<%= book.publisher.name%>)</em>
-        </li>
-      <% end %>
+      <%= render @books %>
     </ol>
   </div>
 
