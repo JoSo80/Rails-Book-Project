@@ -2,6 +2,19 @@ require "csv"
 
 Book.delete_all
 Publisher.delete_all
+Page.delete_all
+
+Page.create(
+  title:     "About the Data",
+  content:   "The data powering this website was provided by a Kaggle dataset about top rated Goodread books",
+  permalink: "about_us"
+)
+
+Page.create(
+  title:     "Contact Us",
+  content:   "If you want to know more about this website email us at goodrated@gmail.com",
+  permalink: "contact_us"
+)
 
 filename = Rails.root.join("db/books.csv")
 
