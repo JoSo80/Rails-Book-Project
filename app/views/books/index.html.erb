@@ -1,8 +1,6 @@
 <h2 class="title is-2">All Top Rated Books</h2>
 
 <ol class="ml-5">
-  <% @books.each do |book|%>
-     <li><%= link_to book.title, book %> was published by <%= book.publisher.name%></li>
-  <% end %>
+  <%= render @books %>
 </ol>
 
