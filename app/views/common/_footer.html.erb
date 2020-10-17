@@ -1,9 +1,12 @@
 <hr>
 <footer>
   <ul class='mt-5'>
-    <li><strong><%= link_to 'Home', root_path%></strong></li>
-    <li><strong><%= link_to 'Top Books', books_path%></strong></li>
-    <li><strong><%= link_to 'Top Publishers', publishers_path%></strong></li>
+    <li><%= link_to 'Home', root_path%></li>
+    <li><%= link_to 'Top Books', books_path%></li>
+    <li><%= link_to 'Top Publishers', publishers_path%></li>
+    <% cms_pages.each do | page |%>
+    <li><%= link_to page.title, permalink_path(page.permalink)%></li>
+    <% end %>
   </ul>
   <p class="mt-5"><em>Copyright Goodreads 2020</p></em>
 </footer>
