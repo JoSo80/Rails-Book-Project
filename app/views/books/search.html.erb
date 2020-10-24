@@ -1,0 +1,7 @@
+<p class = "mb-5">Found <%= pluralize(@books.count, 'Book') %> when searching for: <%= params[:keywords] %></p>
+
+<ol class= "ml-5">
+  <% @books.each do | book |%>
+    <li><%= link_to book.title, book %></li>
+  <% end %>
+</ol>
